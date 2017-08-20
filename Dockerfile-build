@@ -1,0 +1,5 @@
+FROM golang:1.9rc2-alpine3.6
+
+COPY go-workspace /go
+
+ENTRYPOINT go install data-collection-server
